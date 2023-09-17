@@ -52,9 +52,7 @@ module.exports = (env) => {
   }
   const filename = `convenientDiscussions${filenamePostfix}.js`;
 
-  if (!config.protocol || !config.main?.rootPath || !config.articlePath) {
-    throw new Error('No protocol/server/root path/article path found in config.json5.');
-  }
+  
 
   let devtool;
   if (single) {
